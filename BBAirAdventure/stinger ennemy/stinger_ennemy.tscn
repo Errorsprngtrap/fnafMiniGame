@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://c8hnwgm41syy7"]
+
+[ext_resource type="Script" uid="uid://g7asajseypet" path="res://BBAirAdventure/stinger ennemy/stinger_ennemy.gd" id="1_mp7b4"]
+[ext_resource type="Texture2D" uid="uid://dchynyc4osf8v" path="res://BBAirAdventure/stinger ennemy/fake_ennemy.png" id="1_ylbxj"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ssidi"]
+radius = 8.0
+
+[node name="Stinger_ennemy" type="Area2D" unique_id=363807898]
+script = ExtResource("1_mp7b4")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1487466270]
+texture = ExtResource("1_ylbxj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1443775602]
+shape = SubResource("CircleShape2D_ssidi")
