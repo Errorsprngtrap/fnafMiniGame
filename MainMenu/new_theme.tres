@@ -1,0 +1,18 @@
+[gd_resource type="Theme" format=3 uid="uid://c82oqyw4524wd"]
+
+[ext_resource type="FontFile" uid="uid://d2nmbb4d10u3g" path="res://font/Porto_Buena.otf" id="1_yh2w5"]
+[ext_resource type="StyleBox" uid="uid://bf7rxod46nund" path="res://MainMenu/Hover.tres" id="2_oi63i"]
+[ext_resource type="StyleBox" uid="uid://ddm447s1oygud" path="res://MainMenu/Normal.tres" id="3_llvfk"]
+
+[resource]
+BoxContainer/constants/separation = 13
+Button/colors/font_color = Color(0, 0, 0, 1)
+Button/colors/font_outline_color = Color(1, 1, 1, 1)
+Button/constants/outline_size = 10
+Button/font_sizes/font_size = 48
+Button/fonts/font = ExtResource("1_yh2w5")
+Button/styles/hover = ExtResource("2_oi63i")
+Button/styles/normal = ExtResource("3_llvfk")
+Label/constants/outline_size = 5
+Label/font_sizes/font_size = 59
+Label/fonts/font = ExtResource("1_yh2w5")

@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://ya1bi4o8ujso"]
+
+[ext_resource type="Texture2D" uid="uid://36japmb43x2" path="res://BBAirAdventure/ballons/ballonBoy.png" id="1_1ft31"]
+[ext_resource type="Script" uid="uid://3m41arq6x0hi" path="res://BBAirAdventure/ballons/ballon.gd" id="1_dg8mt"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ssidi"]
+radius = 7.0
+height = 32.0
+
+[node name="ballon" type="Area2D" unique_id=204445734]
+script = ExtResource("1_dg8mt")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1891741796]
+texture = ExtResource("1_1ft31")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=762945390]
+shape = SubResource("CapsuleShape2D_ssidi")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
